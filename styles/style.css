@@ -5,9 +5,12 @@ STYLE DE LA PAGE DU MENU PRINCIPAL
 /* Import de la police Open Sans Light */
 @font-face {
   font-family: 'OpenSans-Light';
-  src: url('fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/OpenSans-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/OpenSans-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+    src: url('../fonts/OpenSans-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/OpenSans-Light?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/OpenSans-Light.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/OpenSans-Light.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/OpenSans-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/OpenSans-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 /* Suppression des bordures blanches autour du body */
