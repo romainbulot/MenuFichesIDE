@@ -1,0 +1,149 @@
+/*********************************
+STYLE DE LA PAGE DU MENU PRINCIPAL
+*********************************/
+
+/* Import de la police Open Sans Light */
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/OpenSans-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/OpenSans-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* Suppression des bordures blanches autour du body */
+body {
+margin:0px;
+}
+
+/* Container principal - utilisation de flex pour le layout */
+.main {
+  font-family: 'OpenSans-Light', Fallback, sans-serif;
+  /* Police responsive */
+  font-size: 4vh;
+  color:white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Container responsive en hauteur et largeur */
+  height: 100%;
+  width: 100%;
+}
+
+/* Partie plus claire de chaque row sur la gouche = container de l'image logo */
+.logos {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo png en justification centrée horizontalement et verticalement */
+.img_logos {
+  max-width:60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Partie droite plus foncées = container contenant les titres */
+.labels {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Classe du span contenant les titres, espacement de 2%  */
+.titre{
+  margin-left: 2%;
+}
+
+.cours_logo {
+  background: rgba(231, 15, 117,0.85);
+}
+
+.cours {
+  background:rgb(231, 15, 117);
+}
+
+.tfe_logo {
+  background: rgba( 164, 4, 79,0.85);
+}
+
+.tfe {
+  background: rgb(164, 4, 79);
+}
+
+.medicaments_logo {
+  background: rgba(85, 0, 105,0.85);
+}
+
+.medicaments {
+  background: rgb(85, 0, 105);
+}
+.normes-bio_logo {
+  background:  rgba(50, 0, 78,0.85) ;
+}
+
+.normes-bio {
+  background:  rgb(50, 0, 78) ;
+}
+
+.vocabulaire_logo {
+  background: rgba( 35, 0, 134,0.85);
+}
+
+.vocabulaire {
+  background: rgb(35, 0, 134);
+}
+
+.sentrainer_logo {
+  background: rgba(16, 0, 96,0.85);
+}
+
+.sentrainer {
+  background: rgb(16, 0, 96);
+}
+
+.pratique_logo {
+  background: rgba(0, 136, 240,0.85);
+}
+
+.pratique {
+  background: rgb(0, 136, 240);
+}
+
+.anatomie-physio_logo {
+  background: rgba(57, 173, 255,0.85);
+}
+
+.anatomie-physio {
+  background: rgb(57, 173, 255);
+}
+
+.facebook_logo {
+  background: rgba(0, 0, 0,0.85);
+}
+
+.contact_logo {
+  background: rgba(255, 255, 255,0.85);
+}
+
+.contact {
+  background: rgb(255, 255, 255);
+}
+
+/* Si l'orientation du smartphone est en paysage alors appliquer ces règles  */
+@media screen and (orientation:landscape) {
+  .img_logos {
+    /* On abaisse la valeur du max width sinon un scroll apparaitra */
+    max-width:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
